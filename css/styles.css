@@ -62,6 +62,7 @@ header{
 .site-nav .item {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
 }
 .site-nav .link{
   color: #212121;
@@ -574,7 +575,7 @@ section{
   overflow: hidden;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  border: 0px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -646,8 +647,8 @@ section{
   height: 100%; 
   opacity: 0;
   transform: translateY(100%);
- transition: transform 250ms var(--animation),
- opacity 250ms var(--animation);
+  transition: transform 250ms ubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms ubic-bezier(0.4, 0, 0.2, 1);
 }
 .project a:hover .project-img-content,
 .project a:hover ::before,
